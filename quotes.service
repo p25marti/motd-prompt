@@ -1,0 +1,6 @@
+[Unit]
+Description=Clear a file that is used as a flag for a daily quotes script
+
+[Service]
+Type=oneshot
+ExecStart=/home/pingu/.config/daily-design-quotes/check-for-displayed.sh
