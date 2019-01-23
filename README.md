@@ -14,7 +14,7 @@ example mine can be found at `~/.config/systemd/user/`. Now enable the timer and
 To start the timer use the following:
 
 ```
-systemctl --user start quotes.timer
+systemctl --user enable quotes.timer
 ```
 
 To stop the timer use the following:
