@@ -9,16 +9,24 @@ midnight.
 ## Installation
 Simply move the `daily-design-quotes` directory into your `~/.config` folder, and move both the
 `quotes.timer` and `quotes.service` files into your user-specific systemd unit file folder. For 
-example mine can be found at `~/.config/systemd/user/`. Now enable the timer and enjoy.
+example mine can be found at `~/.config/systemd/user/`. Now enable *and* start the timer.
 
-To start the timer use the following:
-
+To enable the timer use the following:
 ```
 systemctl --user enable quotes.timer
 ```
 
-To stop the timer use the following:
+To start the timer use the following:
+```
+systemctl --user start quotes.timer
+```
 
+To stop the timer use the following:
+```
+systemctl --user stop quotes.timer
+```
+
+To disable the timer use the following:
 ```
 systemctl --user disable quotes.timer
 ```
